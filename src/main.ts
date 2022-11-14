@@ -1,3 +1,16 @@
 import ThreeHelper from "./core/three-helper";
-
-export default ThreeHelper;
+import {
+  BoxGeometry,
+  MeshLambertMaterial,
+  Mesh,
+  AmbientLight,
+  MeshNormalMaterial,
+} from "./plugins/three";
+export {
+  ThreeHelper,
+  BoxGeometry,
+  MeshLambertMaterial,
+  Mesh,
+  AmbientLight,
+  MeshNormalMaterial,
+};

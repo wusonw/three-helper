@@ -6,9 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
+    <div id="container"></div>
     <script type="module">
-      import ThreeHelper from "./build/bundle.js";
-      const helper = new ThreeHelper(100, 100);
+      import {
+        ThreeHelper,
+        BoxGeometry,
+        MeshLambertMaterial,
+        MeshNormalMaterial,
+        Mesh,
+        AmbientLight,
+      } from "./build/bundle.js";
+      const helper = new ThreeHelper();
+      const dom = helper.init(500, 500);
+      dom.style.border = "1px solid black";
+      const canvas = document.getElementById("container");
+      canvas.appendChild(dom);
+      const boxGeo = new BoxGeometry(2, 2, 2);
+      // const material = new MeshLambertMaterial({ color: 0x00ff00 });
+      const material = new MeshNormalMaterial();
+      const box = new Mesh(boxGeo, material);
+      helper.add(box);
+      helper.useControl(true);
+      helper.camera.position.set(3, 3, 3);
+      helper.camera.lookAt(0, 0, 0);
+      const light = new AmbientLight({ color: 0xff00ff });
+      helper.add(light);
+      helper.animate();
       console.log(helper);
     </script>
   </body>
