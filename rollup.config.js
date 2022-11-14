@@ -2,6 +2,8 @@
 import serve from "rollup-plugin-serve";
 import typescript from "@rollup/plugin-typescript";
 import livereload from "rollup-plugin-livereload";
+import commonjs from "rollup-plugin-commonjs";
+import resolve from "rollup-plugin-node-resolve";
 
 export default [
   {
@@ -19,6 +21,8 @@ export default [
         contentBase: "",
       }),
       typescript(),
+      resolve(),
+      commonjs(),
       livereload("build/bundle.js"),
     ],
   },
