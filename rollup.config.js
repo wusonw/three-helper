@@ -9,7 +9,7 @@ export default [
   {
     input: "src/main.ts",
     output: {
-      file: "./build/bundle.js",
+      file: "./build/main.js",
       format: "es",
     },
     plugins: [

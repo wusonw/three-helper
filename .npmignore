@@ -1,8 +1,9 @@
 src
-tsconfig.json
-jest.config.json
-build
-yarn.lock
-jest.config.json
-index.html
+assets
 .gitignore
+.vscode
+index.html
+jest.config.json
+rollup.config.js
+tsconfig.json
+yarn.lock

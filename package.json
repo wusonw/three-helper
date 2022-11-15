@@ -1,8 +1,8 @@
 {
   "name": "@wusonw/three-helper",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "three-helper to use three easier",
-  "main": "main.ts",
+  "main": "./build/main.js",
   "type": "module",
   "scripts": {
     "test": "jest --config jest.config.json",
