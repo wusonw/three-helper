@@ -25,10 +25,7 @@ import { ThreeHelper } from 'three-helper'
 // new instance
 const helper = new ThreeHelper()
 
-// init it with width and height
-const domElement = helper.init(width,height)
+// init it with a parentNode 
+helper.init(parentNode)
 
-// get parent node and append to it
-const parent = document.getElementById('parent')
-parent.appendChild(domElement)
 ```
