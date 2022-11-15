@@ -1,6 +1,6 @@
 {
-  "name": "three-helper",
-  "version": "0.0.1",
+  "name": "@wusonw/three-helper",
+  "version": "0.0.2",
   "description": "three-helper to use three easier",
   "main": "main.ts",
   "type": "module",
@@ -13,7 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/wusonw/three-helper.git"
   },
-  "keywords": [],
+  "keywords": [
+    "threejs",
+    "webgl",
+    "helper"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {

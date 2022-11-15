@@ -13,7 +13,7 @@ three-helper to use three easier
 ### 1. Install it from npm
 
 ```bash
-npm i three-helper
+npm i @wusonw/three-helper
 ```
 
 ### 2. Import and use it
