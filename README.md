@@ -20,7 +20,7 @@ npm i @wusonw/three-helper
 
 ```js
 // import it
-import { ThreeHelper } from 'three-helper'
+import { ThreeHelper } from '@wusonw/three-helper'
 
 // new instance
 const helper = new ThreeHelper()
